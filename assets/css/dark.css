@@ -1,0 +1,238 @@
+/* Color #1d1b1b */
+body {
+	background: #0d0d0d;
+	color: #fff;
+}
+h1, h2, h3, h4, h5, h6, p, a,
+.team-section .position,
+span.cat-links a:hover, 
+span.cat-links a:focus, 
+span.posted-on a:hover, 
+span.posted-on time:hover, 
+span.posted-on a:focus, 
+span.posted-on time:focus,
+ul.trail-items li.trail-item.trail-end,
+ul.trail-items li a:hover, ul.trail-items li a:focus,
+#masthead.site-header.sticky-header.nav-shrink .site-description, 
+.site-description,
+#masthead.site-header.sticky-header.nav-shrink .main-navigation ul li.menu-item-has-children a:hover svg, 
+.main-navigation a:hover, 
+.main-navigation ul li.menu-item-has-children a:hover svg,
+.testimonial-slider article .entry-title a,
+#masthead.site-header.sticky-header.nav-shrink .main-navigation ul.sub-menu li > a, 
+.counter-widget .section-title,
+.counter .counter-value,
+.main-navigation a,
+.counter h5.counter-label,
+.secondary-menu ul li svg,
+.custom-header-content h2 a,
+.main-navigation ul.sub-menu li:hover > a, 
+.main-navigation ul.sub-menu li:focus > a,
+.main-navigation ul.sub-menu li a,
+.secondary-menu,
+.secondary-menu a,
+p.sub-title,
+.widget .tagcloud a,
+#colophon .entry-content, 
+.footer-widgets-area .widget, 
+.footer-widgets-area a, 
+.footer-widgets-area p,
+#colophon .widget_latest_post .entry-meta, 
+#colophon .widget_latest_post .post-content .entry-meta > span.posted-on,
+#colophon article .entry-title a, 
+#introduction article .entry-title a,
+article .entry-title a,
+.hero-section .read-more a,
+.entry-content,
+a.more-btn,
+#secondary .widget-title, 
+#secondary .widgettitle,
+.section-title,
+span.posted-on a, 
+span.posted-on time,
+.entry-meta > span a,
+span.comments-link a:before,
+span.cat-links:before,
+span.vcard.author a:before,
+.entry-meta > span:not(:first-child):before,
+.page-section article .entry-title a,
+#pricing .read-more a,
+.entry-meta > span,
+.entry-meta > span a:hover, 
+.entry-meta > span a:focus,
+.single-post .entry-meta span, 
+.single-post .entry-meta span:before, 
+.single-post .entry-meta span a,
+.short-cta-section .read-more a:hover,
+.wpcf7 input.wpcf7-form-control.wpcf7-submit,
+.custom-header-content-wrapper.slide-item .custom-header-content .read-more a,
+#colophon .widget_recent_entries span.post-date,
+.custom-header-content-wrapper.slide-item .custom-header-content .read-more.alt-btn a:hover,
+.main-navigation ul.sub-menu li.menu-item-has-children a svg,
+#masthead.site-header.sticky-header.nav-shrink .main-navigation ul.sub-menu li:hover > a svg,
+#masthead.site-header.sticky-header.nav-shrink .main-navigation ul.sub-menu li.menu-item-has-children a svg,
+.navigation.posts-navigation svg, 
+.navigation.post-navigation svg,
+#respond label,
+.site-info a:hover,
+.site-title a
+{
+	color: #fff;
+	fill: #fff;
+}
+#secondary .widget ul li {
+	border-color: rgb(255,255,255,0.1);
+}
+.post-navigation, 
+.posts-navigation, 
+.post-navigation, 
+.posts-navigation {
+	background-color: rgb(255,255,255,0.03);
+}
+.section-title,
+#secondary a:hover, 
+#secondary a:focus, 
+#secondary a:active,
+#secondary .widget-title, 
+#secondary .widgettitle {
+	color: #fff !important;
+}
+#pricing article .post-wrapper, 
+.client-section, 
+.our-services {
+	background: #1d1d1d !important;
+}
+.custom-header-content-wrapper.slide-item .custom-header-content .read-more.alt-btn.alt-btn-primary a:hover,
+.short-cta-section .read-more a,
+.custom-header-content-wrapper.slide-item .custom-header-content .read-more a:hover,
+.hero-section .read-more a:hover,
+a.more-btn:hover,
+p.sub-title:before,
+p.sub-title:after,
+.read-more a:hover,
+.widget .tagcloud a:hover,
+#pricing .read-more a:hover,
+.testimonial-slider .separator,
+.counter-widget .section-header .separator,
+.counter .separator {
+	background-color: #fff;
+}
+a.more-btn,
+#portfolio .gallery,
+.widget .tagcloud a,
+#portfolio .gallery .featured-image .overlay .read-more:hover,
+span.tags-links a:hover, span.tags-links a:focus, 
+.single-post .entry-meta span.tags-links a:hover, 
+.single-post .entry-meta span.tags-links a:focus,
+#secondary .widget-title, 
+#secondary .widgettitle,
+.site-footer .widget-title,
+a:hover, 
+a:focus, 
+a:active,
+.read-more,
+.widget .tagcloud a:hover,
+#respond input[type="submit"]
+{
+	border-color: #fff;
+}
+.our-services article.hentry .post-wrapper {
+	border: 1px solid #4d4d4d;
+	background: transparent;
+}
+.our-services article.hentry:hover .post-wrapper {
+	box-shadow: none;
+}
+#pricing article.hentry.highlight .post-wrapper .entry-header {
+	border: none;
+}
+#pricing article.hentry:hover .post-wrapper {
+	box-shadow: none;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 1024px) {
+	#masthead.site-header.sticky-header.nav-shrink .main-navigation ul.sub-menu li:hover > a,
+	#masthead.site-header.sticky-header.nav-shrink .main-navigation ul.sub-menu li:focus > a,
+	#masthead.site-header.sticky-header.nav-shrink .main-navigation ul.sub-menu li.menu-item-has-children:hover > a svg,
+	#masthead.site-header.sticky-header.nav-shrink .main-navigation ul.sub-menu li.menu-item-has-children:focus > a svg
+	{
+		color: #fff;
+		fill: #fff;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.main-navigation a,
+	.main-navigation a:hover,
+	.main-navigation ul.menu li.current-menu-item > a,
+	.main-navigation ul.menu li.current-menu-item > a,
+	#masthead.site-header.sticky-header.nav-shrink .main-navigation a,
+	#masthead.site-header.sticky-header.nav-shrink .main-navigation a:hover,
+	#masthead.site-header.sticky-header.nav-shrink .main-navigation ul li.menu-item-has-children svg
+	{
+		color: #fff;
+		fill: #fff;
+	}
+	#masthead.site-header.sticky-header.nav-shrink .site-title a, 
+	.site-title a, 
+	#masthead.site-header.sticky-header .site-title a
+	{
+		color: #fff;
+	}
+	#masthead.site-header.sticky-header.nav-shrink {
+		background-color: #fff; 
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#masthead .main-navigation ul.nav-menu > li.button:hover a {
+		background: #fff;
+	}
+}
+
+/* Woocommerce */
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title, 
+.woocommerce ul.products li.product .woocommerce-loop-product__title, 
+.woocommerce ul.products li.product h3,
+.woocommerce ul.products li.product .price, 
+.woocommerce div.product p.price, 
+.woocommerce div.product span.price, 
+.woocommerce ul.products li.product .price del, 
+.woocommerce ul.products li.product .price ins
+{
+	color: #fff !important;
+}
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button, 
+.woocommerce input.button,
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, 
+.woocommerce input.button.alt,
+.woocommerce .widget_price_filter .price_slider_amount .button,
+.woocommerce ul.products li.product .button
+{
+	color: #fff;
+	border-color: #fff;
+}
+.woocommerce #respond input#submit:hover, 
+.woocommerce a.button:hover, 
+.woocommerce button.button:hover, 
+.woocommerce input.button:hover,
+.woocommerce #respond input#submit.alt:hover, 
+.woocommerce a.button.alt:hover, 
+.woocommerce button.button.alt:hover, 
+.woocommerce input.button.alt:hover,
+.woocommerce .widget_price_filter .price_slider_amount .button:hover,
+.woocommerce ul.products li.product .button:hover 
+{
+	color: #fff;
+}
+.woocommerce-pagination svg
+{
+	fill: #fff;
+}
