@@ -121,17 +121,21 @@ if ( ! function_exists( 'corponotch_pro_render_short_cta_section' ) ) :
         foreach ( $content_details as $content ) :  ?>
             <div class="short-cta-section cta-section relative left-align">
                 <div class="wrapper">
-                    <?php if ( ! empty( $content['title'] ) ) : ?>
-                        <div class="section-header align-center add-separator">
-                            <h2 class="section-title"><?php echo esc_html( $content['title'] ); ?></h2>
-                        </div><!-- .section-header -->
-                    <?php endif; ?>
+                    <div class="section-header align-center add-separator">
+                        <h2 class="section-title">No Fear. <span style="color: #FFFB00;">All Fight.</span> Backed by <span style="color: #FFFB00;">proven results.</span></h2>
+                    </div><!-- .section-header -->
 
-                    <div class="read-more">
-                        <a href="<?php echo esc_url( $content['url'] ); ?>"><?php echo esc_html( $read_more ); ?></a>
-                    </div>
+                    <div id="syc-button">
+                        <a href="<?php echo esc_url( $content['url'] ); ?>">
+                            <h2 class="start-your-case-label">Start Your Case Now</h2>
+                            <p class="start-your-case-info" style="position: relative; bottom: 8px;">(Takes 30 Seconds)</p>
+                        </a>
+                        
+                    </div> 
+
                 </div><!-- .wrapper -->
             </div><!-- #short_cta -->
         <?php endforeach;
     }
 endif;
+

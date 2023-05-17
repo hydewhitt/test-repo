@@ -169,7 +169,31 @@ if ( ! function_exists( 'corponotch_pro_render_slider_section' ) ) :
         $slider_align = corponotch_pro_theme_option( 'slider_align', 'center-align' );
         $slider_text = corponotch_pro_theme_option( 'slider_text', 'light-text' );
         $slider_alt_btn_color = corponotch_pro_theme_option( 'slider_alt_btn_color' );
+
+        $query = new WP_Query(
+            array(
+                'post_type'              => 'page',
+                'title'                  => 'Start Your Case',
+                'post_status'            => 'all',
+                'posts_per_page'         => 1,
+                'no_found_rows'          => true,
+                'ignore_sticky_posts'    => true,
+                'update_post_term_cache' => false,
+                'update_post_meta_cache' => false,
+                'orderby'                => 'post_date ID',
+                'order'                  => 'ASC',
+            )
+        );
+        
+        if ( ! empty( $query->post ) ) {
+            $page_got_by_title = $query->post;
+        } else {
+            $page_got_by_title = null;
+        }
+        $page_id = $page_got_by_title->ID;
+        $permalink = get_permalink( $page_id );
         ?>
+        <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css" media="screen" />
     	<div id="custom-header">
             <div class="section-content banner-slider <?php echo esc_attr( $slider_align ); ?> <?php echo esc_attr( $slider_text ); ?>" data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "infinite": true, "speed": 1200, "dots": false, "arrows":<?php echo $slider_control ? 'true' : 'false'; ?>, "autoplay": <?php echo $slider_autoplay ? 'true' : 'false'; ?>, "fade": true, "draggable": true }'>
                 <?php foreach ( $content_details as $content ) : ?>
@@ -185,13 +209,18 @@ if ( ! function_exists( 'corponotch_pro_render_slider_section' ) ) :
                                 <?php endif; 
 
                                 if ( ! empty( $content['title'] ) ) : ?>
-                                    <h2><a href="<?php echo esc_url( $content['url'] ); ?>"><?php echo esc_html( $content['title'] ); ?></a></h2>
+                                    <h2 class="landing-title" style="text-align: start;"><a href="<?php echo esc_url( $permalink ); ?>"><?php echo esc_html( $content['title'] ); ?></a></h2>
                                 <?php endif; 
 
                                 if ( ! empty( $slider_btn_label ) ) : ?>
-                                    <div class="read-more">
-                                        <a href="<?php echo esc_url( $content['url'] ); ?>"><?php echo esc_html( $slider_btn_label ); ?></a>
-                                    </div>
+                                    <!-- <div id="syc-button">
+                                        <a href="<?php echo esc_url( $permalink ); ?>">
+                                            <h2 class="start-your-case-label">Start Your Case</h2>
+                                            <p class="start-your-case-info">(In Under 30 Seconds)</p>
+                                        </a>
+                                        
+                                    </div>  -->
+
                                 <?php endif;
 
                                 if ( ! empty( $slider_alt_btn_label ) && ! empty( $slider_alt_btn_link ) ) : ?>

@@ -135,7 +135,7 @@ if ( ! function_exists( 'corponotch_pro_render_cta_section' ) ) :
                 <div class="wrapper">
                     <?php if ( ! empty( $content['title'] ) ) : ?>
                         <div class="section-header align-center add-separator">
-                            <h2 class="section-title"><?php echo esc_html( $content['title'] ); ?></h2>
+                        <h2 class="section-title cta-title">Later could be <span style="color: #FFFB00;">too late.</span> Act Now.</h2>
                         </div><!-- .section-header -->
                     <?php endif; ?>
 
@@ -149,9 +149,13 @@ if ( ! function_exists( 'corponotch_pro_render_cta_section' ) ) :
                                 <?php endif; ?>
                             </div><!-- .entry-container -->
                             
-                            <div class="read-more">
-                                <a href="<?php echo esc_url( $content['url'] ); ?>"><?php echo esc_html( $read_more ); ?></a>
-                            </div>
+                            <div id="syc-button">
+                                <a href="<?php echo esc_url( $content['url'] ); ?>">
+                                    <h2 class="start-your-case-label">Start Your Case Now</h2>
+                                    <p class="start-your-case-info">(In Under 30 Seconds)</p>
+                                </a>
+                                
+                            </div> 
                         </div><!-- .post-wrapper -->
                     </article>
                 </div><!-- .wrapper -->

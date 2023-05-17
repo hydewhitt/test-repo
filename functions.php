@@ -507,3 +507,6 @@ if ( class_exists( 'WooCommerce' ) ) {
 if ( class_exists( 'OCDI_Plugin' ) ) {
     require get_template_directory() . '/inc/demo-import.php';
 }
+
+add_filter( 'gform_confirmation_anchor', '__return_false' );
+add_filter( 'gform_progressbar_start_at_zero', '__return_true' );
